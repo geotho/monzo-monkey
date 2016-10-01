@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { MonzoLoginButtonComponent } from './monzo/monzo-login-button/monzo-login-button.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MonzoLoginButtonComponent
   ],
   imports: [
     BrowserModule,
