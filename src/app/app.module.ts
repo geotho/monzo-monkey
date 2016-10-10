@@ -10,15 +10,20 @@ import { MonzoLoginButtonComponent } from './monzo/monzo-login-button/monzo-logi
 import { LoginComponent } from './auth/login/login.component';
 import { HomeComponent } from './home/home/home.component';
 
+import { AuthGuard } from './auth/auth-guard.service';
 import { AuthService } from './auth/auth.service';
 import { MonzoService } from './monzo/monzo.service';
+import { AccountsComponent } from './accounts/accounts/accounts.component';
+import { AccountComponent } from './account/account/account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MonzoLoginButtonComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    AccountsComponent,
+    AccountComponent
   ],
   imports: [
     routing,
@@ -27,6 +32,7 @@ import { MonzoService } from './monzo/monzo.service';
     HttpModule
   ],
   providers: [
+    AuthGuard,
     AuthService,
     MonzoService,
   ],

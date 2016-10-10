@@ -7,13 +7,10 @@ import MonzoConstants from '../monzo.constants';
   styleUrls: ['./monzo-login-button.component.css']
 })
 export class MonzoLoginButtonComponent implements OnInit {
-
   monzoLogin = 'https://auth.getmondo.co.uk/' +
      '?client_id=' + MonzoConstants.clientId + '&' +
      'redirect_uri=' + MonzoConstants.redirectUrl + '&' +
      'response_type=code&state=foo';
 
-  ngOnInit() {
-    console.log(MonzoConstants);
-  }
+  ngOnInit() { }
 }

@@ -1,0 +1,9 @@
+<p>
+  Your accounts:
+</p>
+
+<ol>
+  <li *ngFor="let a of accounts">
+    <a routerLink="/account/{{a.id}}"> {{a.description}} ({{a.id}})</a>
+  </li>
+</ol>
